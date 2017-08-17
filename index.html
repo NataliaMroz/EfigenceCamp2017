@@ -1,0 +1,61 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logowanie</title>
+    <link rel="stylesheet" href="css/app.css">
+  </head>
+
+  <body>
+
+
+
+
+  <div class="container" id="apla">
+      <div class="row">
+          <div class="small-12 medium-3 column-4">
+              <img src="./img/logo.png" alt="LOGO" class="logo">
+          </div>
+          <div class="small-12 medium-6 column-8 loginForm">
+              <h1>Login</h1>
+              <p>Aby zaimportować dane, zaloguj się do swojego banku</p>
+              <div class="form-wrapper">
+                  <form id="login-form" action="https://efigence-camp.herokuapp.com/api/login" method="POST">
+                      <span id="login" class="numbers" tabindex="1">127633223</span>
+                      <input id="hideLogin" class="hide" type="text" placeholder="Wpisz ID Klienta">
+                      <button id="login-toggle" type="button">
+                          <span class="fa fa-times-circle">X </span>
+                      </button>
+                      <input id="password" type="password" placeholder="Wpisz hasło" tabindex="2">
+                      <span class="keyboard"><i class="fa fa-keyboard-o"></i></span>
+                      <div class="error hide"></div>
+                      <br>
+                      <span>Select other</span>
+                      <button class="button" type="submit" tabindex="3">GO</button>
+                  </form>
+              </div>
+              <footer>
+                  <div class="row">
+                      <div class="small-12 medium-6 column-9">
+                          <ul class="menu">
+                              <li><a href="#" tabindex="4">SECURITY</a></li>
+                              <li><a href="#" tabindex="5">LOGGIN IN</a></li>
+                              <li><a href="#" tabindex="6">CONTACT</a></li>
+                          </ul>
+                      </div>
+                  </div>
+              </footer>
+          </div>
+      </div>
+  </div>
+
+
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/what-input/dist/what-input.js"></script>
+    <script src="bower_components/foundation-sites/dist/js/foundation.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/login.js"></script>
+  </body>
+</html>
